@@ -1,0 +1,39 @@
+{
+  "name": "genpark-voice-call-dtmf-tone-ivr-navigator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous telephone IVR menu navigator parsing spoken voice prompts and emitting dual-tone multi-frequency (DTMF) keypad digits.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "voice-agent",
+  "tags": [
+    "dtmf",
+    "ivr-navigator",
+    "twilio",
+    "phone-automation",
+    "keypad-tone"
+  ],
+  "inputs": {
+    "spoken_menu_prompt": {
+      "type": "string"
+    },
+    "desired_department": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "navigation_id": {
+      "type": "string"
+    },
+    "dtmf_tone_emitted": {
+      "type": "string"
+    },
+    "menu_traversal_successful": {
+      "type": "boolean"
+    },
+    "call_session_graph_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
